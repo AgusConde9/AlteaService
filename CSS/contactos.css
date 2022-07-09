@@ -1,0 +1,26 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.header a {
+    color: rgb(0, 0, 0);
+}
+legend{
+    color: red;
+}
+fieldset{
+    color: black;
+}
+h1 {
+    color: red;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
+.logos {
+    color: red;
+}

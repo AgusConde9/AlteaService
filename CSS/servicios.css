@@ -1,0 +1,37 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.header a {
+    color: rgb(0, 0, 0);
+}
+
+.h1__titulo {
+    color: red;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
+
+.textotitulo {
+    text-align: center;
+}
+
+.h2__subtitulos {
+    color: red;
+}
+
+.logos {
+    color: red;
+}
+.maps{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right:950px;
+    padding-bottom: 5px;
+    float:right;
+}

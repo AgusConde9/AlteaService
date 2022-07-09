@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="/CSS/contactos.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="/Assets/LogoSample_ByTailorBrands.jpg" alt=""></a>
+        <ul>
+            <li> <a href="contactos.html">Contactanos</a></li>
+            <li><a href="quienes somos.html">Quienes somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="/views/marcas.html">Marcas</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <h1>Formularios</h1 id=formularios>
+        <form action="">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido</label>
+                <br>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                <br>
+                <br>
+                <label for="correo">Correo electronico</label>
+                <br>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required>
+                <br>
+                <br>
+                <label for="numero">Numero de telefono</label>
+                <br>
+                <input type="number" name="numero" id="numero" placeholder="Ingresa tu numero de telefono" required>
+                <br>
+                <br>
+                <label for="Vehiculo">Vehiculo</label>
+                <br>
+                <select name="Vehiculo" id="Vehiculo">
+                    <option value="">Selecciona el tipo de vehiculo</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Auto">Auto</option>
+                </select>
+                <br>
+                <br>
+                <div>Motivo de contacto</div>
+                <input type="radio" name="cbox1">Problema
+                <input type="radio" name="cbox1">Revision
+                <input type="radio" name="cbox1">Otro
+                <br>
+                <br>
+                <label for="comentario">Agrega un comentario(sobre el motivo de tu contacto)</label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="50" rows="5" maxlength="190"
+                    minlength="10"></textarea>
+
+                <br>
+                <input type="submit" value="Envia el formulario">
+                <input type="reset" value="Restablecer">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!--Esto esta adentro del footer-->
+        <p>Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital Federal.</p>
+        <p>Horarios de atencion al cliente:
+            Lunes a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
+        <a>
+            <a class="logos">(logo de Instagram)</a>Instagram <a href="#">(con href al Instagram)</a>
+            <br>
+            <a class="logos">(logo de Twitter)</a> Twitter <a href="#">(con href al Twitter)</a>
+            <br>
+            <a class="logos">(logo de Facebook)</a> Facebook <a href="#">(con href al Facebook)</a>
+            <br>
+            <a class="logos">(logo de Pinterest)</a>Pinterest <a href="#">(con href al Pinterest)</a>
+            <br>
+            <a class="logos">(logo de Linkedin)</a>Linkedin <a href="#">(con href al Linkedin)</a>
+        </a>
+    </footer>
+</body>
+
+</html>
