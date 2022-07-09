@@ -1,13 +1,26 @@
-.header {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    list-style: none;
-    text-align: left;
-    text-decoration: none;
+.barrasup {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    padding-left: 2px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+}
+.logo {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    padding-top: 30px;
 }
 
-.header a {
-    color: rgb(0, 0, 0);
+.navigation {
+    display: flex;
+    padding-right: 2000px;
+    margin-inline: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
 }
 
 .h1__titulo {
@@ -15,10 +28,18 @@
     text-align: center;
     border: solid;
     border-color: black;
+    padding-top: 10px;
 }
 
 .textotitulo {
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .h2__subtitulos {
@@ -27,27 +48,4 @@
 
 .logos {
     color: red;
-}
-
-.maps {
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 950px;
-    padding-bottom: 5px;
-    float: right;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 70px auto;
-    background-color: #ffffff;
-    padding: 10px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
 }
