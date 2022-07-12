@@ -1,13 +1,19 @@
-.header {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    list-style: none;
-    text-align: left;
-    text-decoration: none;
+.barrasup {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    padding-left: 2px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
 }
-
-.header a {
-    color: rgb(0, 0, 0);
+.navbar-nav {
+    padding-left: 1311px;
+}
+.logo {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    padding-top: 30px;
 }
 
 .h1__titulo {
@@ -15,6 +21,8 @@
     text-align: center;
     border: solid;
     border-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .textotitulo {
@@ -25,13 +33,14 @@
     color: red;
 }
 
-.logos {
-    color: red;
+.logos{
+    text-align: center
 }
-.maps{
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right:950px;
-    padding-bottom: 5px;
-    float:right;
+
+.footer{
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 2.5rem;
 }
