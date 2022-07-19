@@ -8,11 +8,11 @@
     <title>Contactos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/backup.css">
     <link rel="icon" href="/Assets/Foto perfil.jpg">
 </head>
 
-<body>
+<body class="body__contactos">
     <header class="barrasup">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -36,39 +36,42 @@
     </header>
 
 
-    <main class="main">
+    <main class="main__contactos">
         <h1 class="h1__titulo">Formularios</h1>
         <p class="textotitulo">Rellene el formulario con la situacion que le esta aconteciendo con su vehiculo,se
             evaluara la situacion y se contactara el responsable del taller para darle un turno.</p>
         <form action="" class="form">
             <fieldset>
-                <legend>Datos Personales</legend>
-                <label for="nombre">Nombre</label>
+                <legend class="legend">Datos Personales</legend>
+                <label for="nombre" class="inputs">Nombre</label>
                 <br>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                <br>
-                <br>
-                <label for="apellido">Apellido</label>
-                <br>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required class="inputs">
                 <br>
                 <br>
-                <label for="correo">Correo electronico</label>
+                <label for="apellido">Apellido</label class="inputs">
                 <br>
-                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required>
-                <br>
-                <br>
-                <label for="numero">Numero de telefono</label>
-                <br>
-                <input type="number" name="numero" id="numero" placeholder="Ingresa tu numero de telefono" required>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required
+                    class="inputs">
                 <br>
                 <br>
-                <label for="Vehiculo">Vehiculo</label>
+                <label for="correo">Correo electronico</label class="inputs">
                 <br>
-                <select name="Vehiculo" id="Vehiculo">
-                    <option value="">Selecciona el tipo de vehiculo</option>
-                    <option value="Moto">Moto</option>
-                    <option value="Auto">Auto</option>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required
+                    class="inputs">
+                <br>
+                <br>
+                <label for="numero" class="inputs">Numero de telefono</label>
+                <br>
+                <input type="number" name="numero" id="numero" placeholder="Ingresa tu numero de telefono" required
+                    class="inputs">
+                <br>
+                <br>
+                <label for="Vehiculo" class="inputs">Vehiculo</label>
+                <br>
+                <select name="Vehiculo" id="Vehiculo" class="inputs">
+                    <option value="" class="inputs">Selecciona el tipo de vehiculo</option>
+                    <option value="Moto" class="inputs">Moto</option>
+                    <option value="Auto" class="inputs">Auto</option>
                 </select>
                 <br>
                 <br>
@@ -82,7 +85,6 @@
                 <br>
                 <textarea name="comentario" id="comentario" cols="50" rows="5" maxlength="190"
                     minlength="10"></textarea>
-
                 <br>
                 <input type="submit" value="Envia el formulario">
                 <input type="reset" value="Restablecer">
