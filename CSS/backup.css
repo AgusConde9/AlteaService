@@ -7,6 +7,9 @@ html {
 .main__contactos{
     height: 94vh;
 }
+.main__quienessomos{
+    height: 100vh;
+}
 .body{
     height: 100vh;
 }
@@ -20,6 +23,9 @@ html {
 }
 .navbar-nav {
     padding-left: 1311px;
+}
+.nav__color{
+    background-color: #ffffff;
 }
 .logo {
     display: flex;
@@ -86,6 +92,9 @@ html {
 .form{
     padding-bottom: 8vh;
   }
+.map{
+    margin-left: 680px;
+}
 
 
 
