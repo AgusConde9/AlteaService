@@ -1,18 +1,23 @@
 html {
     height: 100%;
 }
-.main{
+
+.main {
     height: 92vh;
 }
-.main__contactos{
+
+.main__contactos {
     height: 94vh;
 }
-.main__quienessomos{
+
+.main__quienessomos {
     height: 100vh;
 }
-.body{
+
+.body {
     height: 100vh;
 }
+
 .barrasup {
     display: flex;
     background-color: #ffffff;
@@ -21,7 +26,8 @@ html {
     border: solid;
     border-color: rgb(255, 255, 255);
 }
-.nav__color{
+
+.nav__color {
     background-color: #000000;
 }
 
@@ -48,14 +54,16 @@ html {
 .h2__subtitulos {
     color: red;
 }
-.footer{
+
+.footer {
     background-color: #919191;
     width: 100%;
     left: 0;
     bottom: 0;
     text-align: center
 }
-.footer__marcas{
+
+.footer__marcas {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -63,49 +71,60 @@ html {
     background-color: #919191;
     text-align: center;
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     background-color: #ffffff;
     padding: 10px;
     padding-bottom: 15vh;
-  }
+}
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
-  }
-.gridtext{
+}
+
+.gridtext {
     text-align: left;
-  }
-.form{
+}
+
+.form {
     padding-bottom: 8vh;
-  }
-.map{
+}
+
+.map {
     margin-left: 680px;
 }
-.img__altea{
+
+.img__altea {
     margin-left: 450px;
 }
-.img1 .img2{
+
+.img1 .img2 {
     border: solid black;
 }
-@media only screen and (max-width: 576px){
-    .img-fluid{
+
+@media only screen and (max-width: 576px) {
+    .img-fluid {
         height: 10px;
         width: 160px;
     }
-    .footer{
+
+    .footer {
         position: fixed;
         font-size: 14px;
     }
+
     .navbar-nav {
         padding-left: 5px;
     }
+    .map{
+        margin-left: 50px;
+        height: 50px;
+        width: 25px;
+    }
 }
-
-
-
-
