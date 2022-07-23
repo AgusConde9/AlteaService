@@ -27,12 +27,6 @@ html {
 .nav__color{
     background-color: #ffffff;
 }
-.logo {
-    display: flex;
-    width: 70%;
-    height: 70%;
-    padding-top: 30px;
-}
 
 .h1__titulo {
     color: red;
@@ -100,6 +94,19 @@ html {
 }
 .img1 .img2{
     border: solid black;
+}
+@media only screen and (max-width: 576px){
+    .logo__altea{
+        height: 14px;
+        width: 160px;
+    }
+    .footer{
+        position: fixed;
+        font-size: 14px;
+    }
+    .navbar-nav {
+        padding-left: 10px;
+    }
 }
 
 
