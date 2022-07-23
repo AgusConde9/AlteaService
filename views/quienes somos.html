@@ -14,21 +14,36 @@
 
 <body class="body">
     <header class="barrasup">
-        <nav class="navbar navbar-expand-lg nav__color">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../Assets/LogoSample_ByTailorBrands.jpg"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="./Assets/logo-altea-blanco.png" class="img-fluid"
+                        alt="AlteaService"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/views/contactos.html">Contactanos</a>
-                        <a class="nav-link active" href="/views/quienes somos.html">Quienes Somos</a>
-                        <a class="nav-link active" href="/views/servicios.html">Servicios</a>
-                        <a class="nav-link active" href="/views/marcas.html">Marcas</a>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">AlteaService</h4>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las que trabajamos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/servicios.html">Servicios</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -15,23 +15,37 @@
 
 <body class="body">
     <header class="barrasup">
-        <nav class="navbar navbar-expand-lg nav__color">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo__altea"
-                        src="./assets/LogoSample_ByTailorBrands.jpg " alt="" height="14" width="173"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="./Assets/logo-altea-blanco.png" class="img-fluid"
+                        alt="AlteaService"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
-                        </li>
-                        <li><a class="nav-link active" href="./views/quienes somos.html">Quienes Somos</a></li>
-                        <li><a class="nav-link active" href="./views/servicios.html">Servicios</a></li>
-                        <li><a class="nav-link active" href="./views/marcas.html">Marcas</a></li>
-                    </ul>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">AlteaService</h4>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las que trabajamos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./views/servicios.html">Servicios</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -62,6 +76,9 @@
             <img src="/Assets/Img/foto auto altea.jpg" id="img1" class="img-fluid" alt="... " height="950" width="475">
             <img src="/Assets/Img/segunda foto altea (persiana cerrada).jpg" id="img2" class="img-fluid" alt="..."
                 height="950" width="475">
+            <p>Tambien podes ver el taller mecanico desde google maps apretando aca <a
+                    href="https://www.google.com/maps/place/Mec%C3%A1nico+Juan+Limeres/@-34.6562792,-58.4193854,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccb77dfd7cd63:0x98b9cfa818afdf8d!8m2!3d-34.6562792!4d-58.4171914"></a>
+            </p>
         </div>
     </main>
 
