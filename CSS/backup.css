@@ -93,8 +93,8 @@ html {
     border: solid black;
 }
 @media only screen and (max-width: 576px){
-    .logo__altea{
-        height: 14px;
+    .img-fluid{
+        height: 10px;
         width: 160px;
     }
     .footer{
@@ -102,7 +102,7 @@ html {
         font-size: 14px;
     }
     .navbar-nav {
-        padding-left: 10px;
+        padding-left: 5px;
     }
 }
 
