@@ -94,6 +94,7 @@ html {
 
 .form {
     padding-bottom: 8vh;
+    margin-left: 10px;
 }
 
 .map {
@@ -106,6 +107,9 @@ html {
 
 .img1 .img2 {
     border: solid black;
+}
+.legend{
+    color: red;
 }
 
 @media only screen and (max-width: 576px) {
