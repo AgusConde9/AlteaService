@@ -131,4 +131,26 @@ html {
         height: 50px;
         width: 25px;
     }
+    .body{
+        height: 100vh;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px ;
+        background-color: #ffffff;
+        padding: 10px;
+        padding-bottom: 15vh;
+    }
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .gridtext {
+        text-align: left;
+    }
 }
