@@ -79,6 +79,16 @@ html {
   .form{
     padding-bottom: 7vh;
   }
-
+  @mixin tittle-text{
+    color: red;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@mixin subtittle-text {
+    color: red;
+}
 
 
