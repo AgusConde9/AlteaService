@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     height: 100%;
 }
@@ -16,6 +21,8 @@ html {
 
 .body {
     height: 100vh;
+    background: #fcfcfc;
+    font-family: sans-serif;
 }
 
 .barrasup {
@@ -54,7 +61,6 @@ html {
 .h2__subtitulos {
     color: red;
 }
-
 .footer {
     background-color: #919191;
     width: 100%;
@@ -62,7 +68,6 @@ html {
     bottom: 0;
     text-align: center
 }
-
 .footer__marcas {
     position: fixed;
     left: 0;
@@ -119,7 +124,7 @@ html {
     }
 
     .footer {
-        position: fixed;
+        position:fixed;
         font-size: 14px;
     }
 
