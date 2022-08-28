@@ -1,144 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Taller mecanico">
-    <meta name="keywords" content="Taller mecanico, Taller, mecanico, Mecanica, Autos, Motos">
-    <title>Contactos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/backup.css">
-    <link rel="icon" href="../Assets/Foto perfil.jpg">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>AlteaService</title>
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="body__contactos">
-    <header class="barrasup">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../Assets/logo-altea-blanco.png" class="img-fluid"
-                        alt="AlteaService"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">AlteaService</h4>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../views/quienes somos.html">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../views/contactos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../views/marcas.html">Marcas con las que trabajamos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../views/servicios.html">Servicios</a>
-                            </li>
-                        </ul>
-                    </div>
+<body>
+
+  <header class="header" id="header">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="/assets/Assets/logo-altea-blanco.png" class="img-fluid"
+            alt="AlteaService"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="../index.html"><img
+                  src="/assets/Assets/logo-altea-blanco.png" class="img-fluid" alt="AlteaService"></a> </h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes
+                  Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las
+                  que trabajamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/servicios.html">Servicios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+        <div class="col-md-7">
+          <div class="form h-100 contact-wrap p-5">
+            <h3 class="text-center">Contactar con AlteaService</h3>
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Nombre completo *</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Insertar nombre completo">
                 </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Email *</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Insertar tu email">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="budget" class="col-form-label">Vehiculo *</label>
+                  <input type="text" class="form-control" name="subject" id="subject"
+                    placeholder="Insertar marca y modelo de vehiculo">
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message" class="col-form-label">Mensaje *</label>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                    placeholder="Detallar el motivo de su consulta/turno"></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-5 form-group text-center">
+                  <input type="submit" value="Enviar consulta" class="btn btn-block btn-primary rounded-0 py-2 px-4"
+                    id="boton">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div>
+            <div id="form-message-success">
+              Your message was sent, thank you!
             </div>
-        </nav>
-    </header>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <hr class="featurette-divider">
+    <section>
+      <!--Esto esta adentro del footer-->
+      <div class="textofooter">
+        <p class="text-dark">Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital
+          Federal.</p>
+        <p class="text-dark">Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
+      </div>
+      <div class="logos">
+        <a>
+          <p class="text-dark">Redes sociales del desarollador del sitio web.</p>
+          <a href="https://www.instagram.com/agusconde9/"><img src="/assets/Assets/Img/logo-ig-png-32457.png" alt=""
+              height="25" width="25"></a>
+
+          <a href="https://twitter.com/agusconde9"><img src="/assets/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
+              height="25" width="25"></a>
+
+          <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
+              src="/assets/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
+
+          <a href="https://github.com/AgusConde9"><img src="/assets/Assets/Img/github_PNG40.webp" alt="" height="25"
+              width="25"></a>
+
+          <a href="https://www.tiktok.com/@agusconde9"><img src="/assets/Assets/Img/Round-TikTok-Logo-1536x1536.webp"
+              alt="" height="25" width="25"></a>
+        </a>
+      </div>
+      <hr class="featurette-divider">
+    </section>
+  </footer>
 
 
-    <main class="main__contactos">
-        <h1 class="h1__titulo">Formularios</h1>
-        <p class="textotitulo">Rellene el formulario con la situacion que le esta aconteciendo con su vehiculo,se
-            evaluara la situacion y se contactara el responsable del taller para darle un turno.</p>
-        <form action="" class="form">
-            <fieldset>
-                <legend class="legend">Datos Personales:</legend>
-                <label for="nombre" class="inputs">Nombre:</label>
-                <br>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required class="inputs">
-                <br>
-                <br>
-                <label for="apellido">Apellido:</label class="inputs">
-                <br>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required
-                    class="inputs">
-                <br>
-                <br>
-                <label for="correo">Correo electronico:</label class="inputs">
-                <br>
-                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required
-                    class="inputs">
-                <br>
-                <br>
-                <label for="numero" class="inputs">Numero de telefono:</label>
-                <br>
-                <input type="number" name="numero" id="numero" placeholder="Ingresa tu numero de telefono" required
-                    class="inputs">
-                <br>
-                <br>
-                <label for="Vehiculo" class="inputs">Vehiculo:</label>
-                <br>
-                <select name="Vehiculo" id="Vehiculo" class="inputs">
-                    <option value="" class="inputs">Selecciona el tipo de vehiculo:</option>
-                    <option value="Moto" class="inputs">Moto</option>
-                    <option value="Auto" class="inputs">Auto</option>
-                </select>
-                <br>
-                <br>
-                <div>Motivo de contacto:</div>
-                <input type="radio" name="cbox1"> Problema
-                <input type="radio" name="cbox1"> Revision
-                <input type="radio" name="cbox1"> Otro
-                <br>
-                <br>
-                <label for="comentario">Agrega un comentario(sobre el motivo de tu contacto):</label>
 
-                <br>
-                <input type="submit" value="Envia el formulario">
-                <input type="reset" value="Restablecer">
-            </fieldset>
-        </form>
-    </main>
 
-    <footer class="footer">
-        <footer class="footer">
-            <!--Esto esta adentro del footer-->
-            <div class="textofooter">
-                <p>Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital Federal.</p>
-                <p>Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
-            </div>
-            <div class="logos">
-                <a>
-                    <p>Redes sociales del desarollador del sitio web.</p>
-                    <a href="https://www.instagram.com/agusconde9/"><img src="/Assets/Img/logo-ig-png-32457.png" alt=""
-                            height="25" width="25"></a>
-    
-                    <a href="https://twitter.com/agusconde9"><img src="/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
-                            height="25" width="25"></a>
-    
-                    <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
-                            src="/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
-    
-                    <a href="https://github.com/AgusConde9"><img src="/Assets/Img/github_PNG40.webp" alt="" height="25"
-                            width="25"></a>
-    
-                    <a href="https://www.tiktok.com/@agusconde9"><img src="/Assets/Img/Round-TikTok-Logo-1536x1536.webp"
-                            alt="" height="25" width="25"></a>
-                </a>
-            </div>
-        </footer>
-    </footer>
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

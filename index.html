@@ -1,121 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Taller mecanico">
-    <meta name="keywords" content="Taller mecanico, Taller, mecanico, Mecanica, Autos, Motos">
-    <title>AlteaService</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/backup.css">
-    <link rel="icon" href="Assets/Foto perfil.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>AlteaService</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .featurette-divider {
+      color: rgb(0, 0, 0);
+    }
+    .boton-volve-arriba{
+      padding-top: 10px;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
 </head>
 
-<body class="body">
-    <header class="barrasup">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="./Assets/logo-altea-blanco.png" class="img-fluid"
-                        alt="AlteaService"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="../index.html"><img src="./Assets/logo-altea-blanco.png" class="img-fluid"
-                            alt="AlteaService"></a> </h4>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes
-                                    Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./views/contactos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las
-                                    que trabajamos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./views/servicios.html">Servicios</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <h1 class="h1__titulo">Taller multimarca</h1>
-        <p class="textotitulo">Atendemos todas las marcas. Somos especialistas en inyeccion electronica Nafta y Diesel.
-            Diagnóstico
-            Computarizado, Mecanica en General, Limpieza y control en banco de inyectores por ultrasonido. </p>
-        <h2 class="h2__subtitulos">Su automovil se merece lo mejor</h2>
-        <p>Solo utilizamos materiales y repuestos de excelente calidad, para brindarle un trabajo con la excelencia que
-            usted y su vehiculo merecen.</p>
-        <h2 class="h2__subtitulos">Su tiempo es importante</h2>
-        <p>Sabemos muy bien lo que significa quedarse sin vehiculo, por ese motivo siempre tratamos de minimizar los
-            tiempos de permanencia en el taller lo mas posible. Por supuesto, con el servicio realizado con los altos
-            estándares de calidad que nos caracterizan.</p>
-        <h2 class="h2__subtitulos">Atencion personal y directa</h2>
-        <p>Con atención personalizada de nuestros especialistas usted tiene la seguridad de poder hablar directamente
-            con la persona que se encargara de atender su vehiculo, de esta manera puede comunicarle sus inquietudes y
-            despejar sus dudas. Luego de cada intervención se le entregara un informe y nosotros mantendremos un
-            histórico de servicios / reparaciones.</p>
-        <h2 class="h2__subtitulos">Una clara comunicacion</h2>
-        <p>Contamos con los medios más modernos para mantenernos en contacto. Desde la simple telefonía a la mas alta
-            integración de mensajería utilizando Internet y todos sus beneficios. Esto le permite a usted poder
-            contactarnos y saber, por ejemplo, el avance de su servicio o la disponibilidad de turnos sin moverse de su
-            oficina o molestarse con el teléfono.</p>
-        <div class="img__altea">
-            <img src="/Assets/Img/foto auto altea.jpg" id="img1" class="img-fluid" alt="... " height="950" width="475">
-            <img src="/Assets/Img/segunda foto altea (persiana cerrada).jpg" id="img2" class="img-fluid" alt="..."
-                height="950" width="475">
-        </div>
-    </main>
+<body>
 
-    <footer class="footer">
+  <header class="header" id="header">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="/assets/Assets/logo-altea-blanco.png" class="img-fluid"
+            alt="AlteaService"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="../index.html"><img
+                  src="/assets/Assets/logo-altea-blanco.png" class="img-fluid" alt="AlteaService"></a> </h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes
+                  Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las
+                  que trabajamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./views/servicios.html">Servicios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/Assets/diagnostico.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Diagnostico Computarizado</h3>
+            <p>Mira aca como es hacer un diagnostico Computarizado</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Assets/cambio de aceite.jpg" alt="Chicago" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Cambio de aceite</h3>
+            <p>Mira aca como es un cambio de aceite.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Assets/inyeccion.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Inyeccion electronica</h3>
+            <p>Mira aca como analizamos la inyeccion electronica</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="/assets/Assets/marcas.png" alt="Marcas" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+
+          <h2 class="fw-normal">Marcas que atendemos</h2>
+          <p>Apretando el boton que hay debajo de este texto podras ver cuales marcas trabajamos en AlteaService.</p>
+          <p><a class="btn btn-secondary bg-dark" href="/views/marcas.html">Apreta aca para conocer más &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="/assets/Assets/Servicios.jpg" alt="Servicios" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+
+          <h2 class="fw-normal">Servicios que realizamos</h2>
+          <p>Apreta esta boton para saber que servicios se realizan en el taller mecanico AlteaService.
+          </p>
+          <p><a class="btn btn-secondary bg-dark" href="/views/servicios.html">Mira aca los servicios que realizamos
+              &raquo;</a>
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="/assets/Assets/sobre nosotros.jpg" alt="Nosotros" class="bd-placeholder-img rounded-circle"
+            width="140" height="140">
+
+          <h2 class="fw-normal">Sobre nosotros</h2>
+          <p>Hace click en el boton de abajo para conocernos un poco mejor y saber con quien podes encontrarte en
+            AlteaService.</p>
+          <p><a class="btn btn-secondary bg-dark" href="/views/quienes somos.html">Conocenos &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1 text-dark">Mira aca como se ve el <span class="text-muted">taller
+              de
+              AlteaService</span></h2>
+          <p class="lead text-dark">Aca hay una imagen de como se ve por fuera el taller mecanico AlteaService.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="/assets/Assets/R.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1 text-dark">En esta foto se puede ver<span class="text-muted"> por
+              dentro el
+              taller de AlteaService</span></h2>
+          <p class="lead text-dark">En esta imagen se puede ver el taller mecanico de AlteaService por dentro,las maquinas y a los
+            trabajadores en accion.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="/assets/Assets/dentro.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1 text-dark">Los trabajadores de AlteaService siempre estan
+            trabajando,<span class="text-muted">como se puede ver en esta imagen</span>
+          </h2>
+          <p class="lead text-dark">Se puede ver lo incansables que son los trabajadores de AlteaService,no dejan de trabajar en
+            ningun momento en su jornada laboral.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="/assets/Assets/trabajando.jpg" alt=""
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+
+      <section>
         <!--Esto esta adentro del footer-->
         <div class="textofooter">
-            <p>Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital Federal.</p>
-            <p>Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
+          <p class="text-dark">Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital
+            Federal.</p>
+          <p class="text-dark">Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
         </div>
         <div class="logos">
-            <a>
-                <p>Redes sociales del desarollador del sitio web.</p>
-                <a href="https://www.instagram.com/agusconde9/"><img src="/Assets/Img/logo-ig-png-32457.png" alt=""
-                        height="25" width="25"></a>
+          <a>
+            <p class="text-dark">Redes sociales del desarollador del sitio web.</p>
+            <a href="https://www.instagram.com/agusconde9/"><img src="/assets/Assets/Img/logo-ig-png-32457.png" alt=""
+                height="25" width="25"></a>
 
-                <a href="https://twitter.com/agusconde9"><img src="/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
-                        height="25" width="25"></a>
+            <a href="https://twitter.com/agusconde9"><img src="/assets/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
+                height="25" width="25"></a>
 
-                <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
-                        src="/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
+            <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
+                src="/assets/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
 
-                <a href="https://github.com/AgusConde9"><img src="/Assets/Img/github_PNG40.webp" alt="" height="25"
-                        width="25"></a>
+            <a href="https://github.com/AgusConde9"><img src="/assets/Assets/Img/github_PNG40.webp" alt="" height="25"
+                width="25"></a>
 
-                <a href="https://www.tiktok.com/@agusconde9"><img src="/Assets/Img/Round-TikTok-Logo-1536x1536.webp"
-                        alt="" height="25" width="25"></a>
-            </a>
+            <a href="https://www.tiktok.com/@agusconde9"><img src="/assets/Assets/Img/Round-TikTok-Logo-1536x1536.webp"
+                alt="" height="25" width="25"></a>
+          </a>
         </div>
+        <div class="boton-volve-arriba">
+          <p><a class="btn btn-secondary bg-dark" href="#header">Volve arriba &raquo;</a></p>
+        </div>
+        <hr class="featurette-divider">
+      </section>
     </footer>
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 
 </html>
