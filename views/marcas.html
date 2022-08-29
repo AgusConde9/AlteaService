@@ -1,330 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
-    <title>AlteaService</title>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>AlteaService</title>
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      .text-muted {
-        font-size: 20px;
-        color: black;
-      }
-      .container{
-        color: rgb(0, 0, 0);
-      }
-    </style>
+    .text-muted {
+      font-size: 20px;
+      color: black;
+    }
 
-    
-  </head>
-  <body>
-    
-    <header>
-      <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/assets/Assets/logo-altea-blanco.png" class="img-fluid"
-              alt="AlteaService"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="../index.html"><img
-                    src="/assets/Assets/logo-altea-blanco.png" class="img-fluid" alt="AlteaService"></a> </h4>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./views/quienes somos.html">Quienes
-                    Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./views/contactos.html">Contactanos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./views/marcas.html">Marcas con las
-                    que trabajamos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./views/servicios.html">Servicios</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+    .container {
+      color: rgb(0, 0, 0);
+    }
+  </style>
 
-<main>
-  
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Marcas con las que trabajamos</h1>
-        <p class="lead text-muted">En esta seccion de la pagina se pueden visualizar las marcas de vehiculos con las cuales el taller mecanico AlteaService trabaja.</p>
-        <p>
-          <a href="/views/contactos.html" class="btn btn-primary my-2">Contactanos</a>
-          <a href="/views/servicios.html" class="btn btn-secondary my-2">Servicios</a>
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+</head>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Audi-emblem-2016-black-1920x1080.jpg" alt="Audi">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Audi</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Chevrolet-logo-2013-2560x1440.jpg" alt="Chevrolet">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Chevrolet</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Citroen-Logo-2009.webp" alt="Citroen">
-            <div class="card-body">
-              <p class="card-text"></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Citroen</small>
-              </div>
-            </div>
-          </div>
-        </div>
+<body>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/daewoo.jpg" alt="Daewoo">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Daewoo</small>
-              </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/Assets/logo-altea-blanco.png" class="img-fluid"
+            alt="AlteaService"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="../index.html"><img
+                  src="/assets/Assets/logo-altea-blanco.png" class="img-fluid" alt="AlteaService"></a> </h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Fiat-text-logo-1920x1080.jpg" alt="Fiat">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Fiat</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Ford-logo-1929-1440x900.jpg" alt="Ford">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Ford</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/honda.jpg" alt="Honda">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Honda</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/hyundai.jpg" alt="Hyundai">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Hyundai</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/kia.jpg" alt="Kia">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Kia</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Peugeot-logo.webp" alt="Peugeot">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Peugeot</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Renault-logo-1992-1920x1080.jpg" alt="Renault">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Renault</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Seat-Logo-2012-2048x1152.jpg" alt="Seat">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Seat</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/suzuki.jpg" alt="Suzuki">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Suzuki</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/toyota.jpg" alt="Toyota">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Toyota</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/assets/Assets/Img/Volkswagen-Logo-2048x1161.webp" alt="Volkswagen">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Volkswagen</small>
-              </div>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/views/sobre nosotros.html">Quienes
+                  Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/views/contactos.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/views/marcas.html">Marcas con las
+                  que trabajamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/views/servicios.html">Servicios</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Marcas con las que trabajamos</h1>
+          <p class="lead text-muted">En esta seccion de la pagina se pueden visualizar las marcas de vehiculos con las
+            cuales el taller mecanico AlteaService trabaja.</p>
+          <p>
+            <a href="/views/contactos.html" class="btn btn-primary my-2">Contactanos</a>
+            <a href="/views/servicios.html" class="btn btn-secondary my-2">Servicios</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Audi-emblem-2016-black-1920x1080.jpg" alt="Audi">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Audi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Chevrolet-logo-2013-2560x1440.jpg" alt="Chevrolet">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Chevrolet</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Citroen-Logo-2009.webp" alt="Citroen">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Citroen</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/daewoo.jpg" alt="Daewoo">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Daewoo</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Fiat-text-logo-1920x1080.jpg" alt="Fiat">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Fiat</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Ford-logo-1929-1440x900.jpg" alt="Ford">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Ford</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/honda.jpg" alt="Honda">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Honda</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/hyundai.jpg" alt="Hyundai">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Hyundai</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/kia.jpg" alt="Kia">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Kia</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Peugeot-logo.webp" alt="Peugeot">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Peugeot</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Renault-logo-1992-1920x1080.jpg" alt="Renault">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Renault</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Seat-Logo-2012-2048x1152.jpg" alt="Seat">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Seat</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/suzuki.jpg" alt="Suzuki">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Suzuki</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/toyota.jpg" alt="Toyota">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Toyota</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/Assets/Img/Volkswagen-Logo-2048x1161.webp" alt="Volkswagen">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Volkswagen</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-</main>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="container ">
-      
-      <section class="">
-        <!--Esto esta adentro del footer-->
-        <div class="textofooter">
-          <p>Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital Federal.</p>
-          <p>Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
-        </div>
-        <div class="logos">
-          <a>
-            <p>Redes sociales del desarollador del sitio web.</p>
-            <a href="https://www.instagram.com/agusconde9/"><img src="/assets/Assets/Img/logo-ig-png-32457.png" alt=""
-                height="25" width="25"></a>
+  <!-- FOOTER -->
+  <footer class="container">
+    <hr class="featurette-divider">
+    <section>
+      <!--Esto esta adentro del footer-->
+      <div class="textofooter">
+        <p class="text-dark">Nos puede encontrar en Nueva Pompeya a la altura de Av. Del Barco Centenera 3566, Capital
+          Federal.</p>
+        <p class="text-dark">Horarios de atencion al cliente: a Viernes de 8:00 a 18:00 y Sabados de 10:00 a 16:00</p>
+      </div>
+      <div class="logos">
+        <a>
+          <p class="text-dark">Redes sociales del desarollador del sitio web.</p>
+          <a href="https://www.instagram.com/agusconde9/"><img src="/assets/Assets/Img/logo-ig-png-32457.png" alt=""
+              height="25" width="25"></a>
 
-            <a href="https://twitter.com/agusconde9"><img src="/assets/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
-                height="25" width="25"></a>
+          <a href="https://twitter.com/agusconde9"><img src="/assets/Assets/Img/5a2fe479cc45e43754640849.webp" alt=""
+              height="25" width="25"></a>
 
-            <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
-                src="/assets/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
+          <a href="https://www.linkedin.com/in/agustin-conde-51437a219/"><img
+              src="/assets/Assets/Img/linkedin-png-linkedin-icon-1600.webp" alt="" height="25" width="25"></a>
 
-            <a href="https://github.com/AgusConde9"><img src="/assets/Assets/Img/github_PNG40.webp" alt="" height="25"
-                width="25"></a>
+          <a href="https://github.com/AgusConde9"><img src="/assets/Assets/Img/github_PNG40.webp" alt="" height="25"
+              width="25"></a>
 
-            <a href="https://www.tiktok.com/@agusconde9"><img src="/assets/Assets/Img/Round-TikTok-Logo-1536x1536.webp" alt=""
-                height="25" width="25"></a>
-          </a>
-        </div>
-      </section>
-    </footer>
+          <a href="https://www.tiktok.com/@agusconde9"><img src="/assets/Assets/Img/Round-TikTok-Logo-1536x1536.webp"
+              alt="" height="25" width="25"></a>
+        </a>
+      </div>
+
+      <div class="boton-volve-arriba">
+        <p><a class="btn btn-secondary bg-dark" href="#header">Volve arriba &raquo;</a></p>
+      </div>
+      <hr class="featurette-divider">
+    </section>
+  </footer>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      
-  </body>
+
+</body>
+
 </html>
