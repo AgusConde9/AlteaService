@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
 }
 a {
 	transition: .3s all ease;
-	&, &:hover {
+	&,:hover {
 		text-decoration: none!important;
 	}
 }
@@ -87,7 +87,7 @@ a {
 		border-radius: 30px;
 		background: #212529;
 		color: $white;
-		box-shadow: 0 15px 30px 0 rgba(#4d80e4, .2);
+		box-shadow: 0 15px 30px 0 rgba(#212529, .2);
 
 	}
 	&:hover {
@@ -174,7 +174,7 @@ label.error {
 	color: #B90B0B;
 }
 #form-message-success {
-	color: #55A44E;
+	color: #000000;
 	font-size: 18px;
 	font-weight: bold;
 }
